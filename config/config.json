@@ -1,0 +1,35 @@
+{
+  "global": {
+    "common": {
+      "appName": "test",
+      "contextPath": "/test",
+      "listen": "0.0.0.0",
+      "port": "18000",
+      "autoRegister": true
+    },
+    "log": {
+      "console": {
+        "level": "info"
+      },
+      "logFile": {
+        "enable": false,
+        "path": "log",
+        "level": "info",
+        "maxLine": 1000000,
+        "maxDay": 30
+      }
+    }
+  },
+  "eureka": {
+    "eurekaNodes": [
+      "http://192.168.3.121:8761/eureka"
+    ],
+    "autoDetect": {
+      "allow": true,
+      "network": "192.168.3.122/24",
+      "port": "8761",
+      "contextPath": "/eureka",
+      "timeout": 1
+    }
+  }
+}
